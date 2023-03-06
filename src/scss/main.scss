@@ -1,0 +1,14 @@
+// базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+// big components
+@import './components/header';
+@import './components/feedback';
+@import './components/footer';
+
+// small components
+@import './components/form';
+@import './components/range-slider';

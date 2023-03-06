@@ -1,0 +1,54 @@
+<section class="feedback">
+  <div class="container feedback__container">
+    <div class="feedback__cta cta">
+      <a href="#" class="logo-mobile">
+        <img loading="lazy" src="img/logo.svg" class="image" width="193" height="47" alt="Логотип Somebrr">
+      </a>
+      <div class="cta__title-content">
+        <h1 class="cta__title">SEND A REQUEST
+        </h1>
+        <p class="cta__title-text">Leave your contacts and we will contact you as soon as possible</p>
+      </div>
+      <a href="#" class="logo">
+        <img loading="lazy" src="img/logo.svg" class="image" width="193" height="47" alt="Логотип Somebrr">
+      </a>
+    </div>
+    <div class="feedback__contacts contacts">
+      <form action="#" id="form" class="form">
+        <label class="form__label">
+          <input type="text" name="Name" class="input-reset form__input input-name" id="username" placeholder="Name">
+        </label>
+        <label class="form__label form__label--phone">
+          <input type="tel" name="phone" class="input-reset form__input input-tel" id="userphone" placeholder="Phone">
+        </label>
+        <div class="form__label-wrapper">
+          <label for="temp" class="form__label form__label--range">
+            <span class="form__caption">Temp</span>
+            <input type="range" id="temp" class="form__label-temp" value="32.5" style="--min: 0;
+          						 --max: 100;
+          						 --val: 32.5">
+          </label>
+          <datalist id="values">
+            <option value="0" label="hot"></option>
+            <option value="100" label="cold"></option>
+          </datalist>
+        </div>
+        <label class="form__label form__label--comments">
+          <textarea name="comments" class="form__input form__input--textarea" id="comments"
+            placeholder="Comments"></textarea>
+        </label>
+        <div class="form__btn-wrapper">
+          <button type="submit" class="btn-reset btn btn--dark form__btn">
+            Call me
+          </button>
+          <label class="form__label form__label-checkbox">
+            <span class="form__text">By pressing <q>Send</q> button I agree with
+              <a href="../resources/privacy-policy.txt" class="form__link" title="Privacy Policy"
+                target="_blank">Privacy Policy</a>
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

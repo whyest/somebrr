@@ -1,0 +1,114 @@
+.feedback {
+	padding-top: 57px;
+	min-height: 930px;
+	background-color: var(--bg-clr);
+
+	&__container {
+		@include flex;
+
+		@include big-tablet {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		@include small-tablet {
+			display: flex;
+			flex-direction: column;
+			padding-top: 30px;
+		}
+	}
+
+	.cta {
+		@include flex;
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: 47.1%;
+
+		@include big-tablet {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			width: 100%;
+			min-width: none;
+		}
+
+		&__title {
+			max-width: 378px;
+			margin: 0;
+			margin-bottom: 53px;
+
+			font-family: 'GHEA Mariam';
+			font-weight: 400;
+			font-size: 66px;
+			line-height: 110%;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: var(--light-clr);
+
+			@include big-tablet {
+				margin-bottom: 30px;
+			}
+
+			@include small-tablet {
+				max-width: 320px;
+			}
+
+			@include mobile {
+				font-size: 42px;
+			}
+
+			&-text {
+				max-width: 200px;
+				margin: 0;
+				margin-bottom: 92px;
+				padding-left: 3px;
+
+				font-family: 'GHEA Grapalat';
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 150%;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: var(--light-clr);
+
+				@include big-tablet {
+					margin-bottom: 45px;
+				}
+
+				@include small-tablet {
+					margin-bottom: 0;
+				}
+
+				@include mobile {
+					font-size: 10px;
+				}
+			}
+		}
+
+		.logo {
+			padding-left: 3px;
+
+			@include small-tablet {
+				display: none;
+			}
+		}
+
+		.logo-mobile {
+			display: none;
+
+			@include small-tablet {
+				display: flex;
+				width: 130px;
+				height: auto;
+			}
+		}
+	}
+
+	.contacts {
+		display: flex;
+
+		&__form {
+			flex-direction: column;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+	// base
+	--font-family: 'GHEA Grapalat', sans-serif;
+	--content-width: 1748px;
+	--container-offset: 86px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--light-clr: #eeebe6;
+	--bg-clr: #21354b;
+	--logo-clr: #4d5d6f;
+	--pink-clr: #ff69b4;
+	--teak-clr: #b6a16b;
+	--malibu-clr: #5baaf9;
+
+	// range slider
+	$track-w: 538px;
+	$track-h: 1px;
+	$thumb-d: 13px;
+	$track-c: var(--malibu-clr);
+	$filll-c: var(--pink-clr);
+}
